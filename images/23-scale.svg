@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" width="680" height="400" font-family="'PingFang SC','Microsoft YaHei',Helvetica,Arial,sans-serif">
+  <rect width="680" height="400" fill="#ffffff"/>
+  <text x="24" y="32" font-size="19" font-weight="700" fill="#111827">先建立尺度感：芯片里的"小"，小到没有直觉</text>
+  <text x="24" y="54" font-size="12.5" fill="#6b7280">横轴是对数尺（每格 10 倍），不是等距尺 —— 差一格就是差 10 倍</text>
+
+  <!-- 对数轴 -->
+  <line x1="70" y1="252" x2="650" y2="252" stroke="#9ca3af" stroke-width="2"/>
+  <g font-size="10.5" fill="#6b7280" text-anchor="middle">
+    <text x="70" y="272">0.1nm</text>
+    <text x="162" y="272">1nm</text>
+    <text x="253" y="272">10nm</text>
+    <text x="345" y="272">100nm</text>
+    <text x="437" y="272">1µm</text>
+    <text x="528" y="272">10µm</text>
+    <text x="620" y="272">100µm</text>
+  </g>
+  <g stroke="#d1d5db" stroke-width="1">
+    <line x1="70" y1="252" x2="70" y2="262"/><line x1="162" y1="252" x2="162" y2="262"/>
+    <line x1="253" y1="252" x2="253" y2="262"/><line x1="345" y1="252" x2="345" y2="262"/>
+    <line x1="437" y1="252" x2="437" y2="262"/><line x1="528" y1="252" x2="528" y2="262"/>
+    <line x1="620" y1="252" x2="620" y2="262"/>
+  </g>
+
+  <!-- 硅原子间距 0.235nm -->
+  <g>
+    <line x1="104" y1="252" x2="104" y2="200" stroke="#2563eb" stroke-width="1.5"/>
+    <circle cx="104" cy="196" r="5" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="104" y="184" font-size="11.5" font-weight="600" fill="#1d4ed8" text-anchor="middle">硅原子</text>
+    <text x="104" y="170" font-size="10" fill="#6b7280" text-anchor="middle">0.235nm</text>
+  </g>
+
+  <!-- DNA 2.5nm -->
+  <g>
+    <line x1="198" y1="252" x2="198" y2="150" stroke="#7c3aed" stroke-width="1.5"/>
+    <rect x="188" y="126" width="20" height="24" rx="5" fill="#ddd6fe" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="198" y="118" font-size="11.5" font-weight="600" fill="#6d28d9" text-anchor="middle">DNA 宽度</text>
+    <text x="198" y="106" font-size="10" fill="#6b7280" text-anchor="middle">2.5nm</text>
+  </g>
+
+  <!-- 28nm 栅长 -->
+  <g>
+    <line x1="294" y1="252" x2="294" y2="196" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="276" y="172" width="36" height="20" rx="3" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="294" y="164" font-size="11.5" font-weight="600" fill="#b91c1c" text-anchor="middle">晶体管栅长 28nm</text>
+    <text x="294" y="150" font-size="10" fill="#6b7280" text-anchor="middle">≈ 100 个原子排成一排</text>
+  </g>
+
+  <!-- 病毒 100nm -->
+  <g>
+    <line x1="345" y1="252" x2="345" y2="128" stroke="#0891b2" stroke-width="1.5"/>
+    <circle cx="345" cy="112" r="14" fill="#cffafe" stroke="#0891b2" stroke-width="1.5"/>
+    <text x="345" y="84" font-size="11.5" font-weight="600" fill="#0e7490" text-anchor="middle">病毒</text>
+    <text x="345" y="70" font-size="10" fill="#6b7280" text-anchor="middle">100nm</text>
+  </g>
+
+  <!-- 细菌 1µm -->
+  <g>
+    <line x1="437" y1="252" x2="437" y2="186" stroke="#65a30d" stroke-width="1.5"/>
+    <rect x="418" y="164" width="38" height="20" rx="10" fill="#d9f99d" stroke="#65a30d" stroke-width="1.5"/>
+    <text x="437" y="156" font-size="11.5" font-weight="600" fill="#4d7c0f" text-anchor="middle">细菌</text>
+    <text x="437" y="142" font-size="10" fill="#6b7280" text-anchor="middle">1µm（无尘室要挡的）</text>
+  </g>
+
+  <!-- 红细胞 8µm -->
+  <g>
+    <line x1="520" y1="252" x2="520" y2="150" stroke="#ea580c" stroke-width="1.5"/>
+    <circle cx="520" cy="132" r="16" fill="#fed7aa" stroke="#ea580c" stroke-width="1.5"/>
+    <text x="520" y="104" font-size="11.5" font-weight="600" fill="#c2410c" text-anchor="middle">红细胞</text>
+    <text x="520" y="90" font-size="10" fill="#6b7280" text-anchor="middle">8µm</text>
+  </g>
+
+  <!-- 头发 80µm -->
+  <g>
+    <line x1="611" y1="252" x2="611" y2="196" stroke="#4b5563" stroke-width="1.5"/>
+    <rect x="604" y="170" width="14" height="26" rx="7" fill="#e5e7eb" stroke="#4b5563" stroke-width="1.5"/>
+    <text x="608" y="162" font-size="11.5" font-weight="600" fill="#374151" text-anchor="middle">头发</text>
+    <text x="608" y="148" font-size="10" fill="#6b7280" text-anchor="middle">80µm</text>
+  </g>
+
+  <!-- 底部结论 -->
+  <rect x="24" y="292" width="632" height="84" rx="8" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="40" y="314" font-size="13" font-weight="700" fill="#9a3412">记住这个对比就够了：</text>
+  <text x="40" y="336" font-size="12.5" fill="#7c2d12">一根头发直径 ≈ 3000 个 28nm 晶体管排成一排。</text>
+  <text x="40" y="356" font-size="12.5" fill="#7c2d12">所以一粒肉眼根本看不见的灰尘，落在芯片上就是"一座山压垮一条街"—— 这就是无尘室存在的全部理由。</text>
+</svg>

@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="900" height="460" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
   <rect width="900" height="460" fill="#ffffff"/>
-  <text x="450" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">30 小时速成路线图</text>
+  <text x="450" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">32 小时速成路线图（含 2.5h 零基础补课）</text>
   <text x="450" y="54" text-anchor="middle" font-size="12.5" fill="#64748b">按顺序学：先建立"大局观"，再补"物理/工艺"，最后攻各自岗位的方法论</text>
 
   <!-- 阶段一 -->
   <rect x="40" y="72" width="820" height="76" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
-  <text x="60" y="98" font-size="14" font-weight="700" fill="#1e40af">阶段一 · 建立大局观（约 5h）</text>
-  <text x="60" y="120" font-size="12" fill="#1e293b">00 行业与岗位认知 1.5h ｜ 01 半导体物理与器件 3h ｜ 07 无尘室与生产运作 1.5h</text>
+  <text x="60" y="98" font-size="14" font-weight="700" fill="#1e40af">阶段一 · 建立大局观（约 7.5h，含补课篇）</text>
+  <text x="60" y="120" font-size="12" fill="#1e293b">00 零基础补课 2.5h（看不懂就先来这） ｜ 01 行业与岗位认知 1.5h ｜ 08 无尘室与生产运作 1.5h</text>
   <text x="60" y="138" font-size="12" fill="#64748b">目标：能说出产业链分工、EE/PE/PIE 区别、晶圆从进厂到出厂的完整路径</text>
 
   <!-- 阶段二 -->
   <rect x="40" y="160" width="820" height="76" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
   <text x="60" y="186" font-size="14" font-weight="700" fill="#065f46">阶段二 · 工艺主干（约 11h）</text>
-  <text x="60" y="208" font-size="12" fill="#1e293b">02 制造全流程 3h ｜ 03 光刻与刻蚀 3h ｜ 04 薄膜与掺杂 3h ｜ 05 CMP·清洗·量测 2h</text>
+  <text x="60" y="208" font-size="12" fill="#1e293b">02 半导体物理与器件 3h ｜ 03 制造全流程 3h ｜ 04 光刻与刻蚀 3h ｜ 05 薄膜与掺杂 3h ｜ 06 CMP·清洗·量测 2h</text>
   <text x="60" y="226" font-size="12" fill="#64748b">目标：每个模块能讲清"干什么、怎么做、关键参数、常见不良"</text>
 
   <!-- 阶段三分叉 -->
@@ -20,18 +20,18 @@
 
   <rect x="40" y="276" width="400" height="76" rx="10" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
   <text x="60" y="302" font-size="14" font-weight="700" fill="#9a3412">EE 方向</text>
-  <text x="60" y="324" font-size="12" fill="#1e293b">06 真空与设备硬件 3.5h ｜ 08 设备工程方法论 3h</text>
+  <text x="60" y="324" font-size="12" fill="#1e293b">07 真空与设备硬件 3.5h ｜ 09 设备工程方法论 3h</text>
   <text x="60" y="342" font-size="12" fill="#64748b">目标：能讲清机台子系统、MTBF/OEE、PM 与排障</text>
 
   <rect x="460" y="276" width="400" height="76" rx="10" fill="#faf5ff" stroke="#7c3aed" stroke-width="2"/>
   <text x="480" y="302" font-size="14" font-weight="700" fill="#5b21b6">PE 方向</text>
-  <text x="480" y="324" font-size="12" fill="#1e293b">09 工艺工程方法论 3.5h（SPC / DOE / 良率 / 8D）</text>
+  <text x="480" y="324" font-size="12" fill="#1e293b">10 工艺工程方法论 3.5h（SPC / DOE / 良率 / 8D）</text>
   <text x="480" y="342" font-size="12" fill="#64748b">目标：会用 SPC/DOE 的语言谈改善，能讲清良率逻辑</text>
 
   <!-- 阶段四 -->
   <rect x="40" y="368" width="820" height="60" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
   <text x="60" y="392" font-size="14" font-weight="700" fill="#991b1b">阶段四 · 面试冲刺（约 3h）</text>
-  <text x="60" y="414" font-size="12" fill="#1e293b">10 面试冲刺 2.5h：高频题 + 自我介绍 + 反问清单 ｜ 附录B 自测题库 0.5h</text>
+  <text x="60" y="414" font-size="12" fill="#1e293b">11 面试冲刺 2.5h：高频题 + 自我介绍 + 反问清单 ｜ 附录B 自测题库 0.5h</text>
 
   <!-- 底部方法建议 -->
   <rect x="40" y="440" width="820" height="16" rx="5" fill="#f1f5f9"/>
