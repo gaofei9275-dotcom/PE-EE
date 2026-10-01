@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="900" height="460" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="900" height="460" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">EE 的三个核心指标：MTBF、MTTR、OEE</text>
+
+  <!-- 时间线 -->
+  <text x="40" y="64" font-size="14" font-weight="700" fill="#2563eb">一台机台的一生：Uptime 与 Downtime 的拉锯</text>
+  <rect x="40" y="78" width="820" height="130" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+
+  <rect x="60" y="104" width="230" height="40" rx="6" fill="#d1fae5" stroke="#059669"/>
+  <text x="175" y="129" text-anchor="middle" font-size="12" font-weight="700" fill="#065f46">Uptime 正常运行</text>
+
+  <rect x="290" y="104" width="150" height="40" rx="6" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="365" y="123" text-anchor="middle" font-size="11" font-weight="700" fill="#991b1b">Down 故障停机</text>
+  <text x="365" y="137" text-anchor="middle" font-size="10" fill="#991b1b">修！MTTR</text>
+
+  <rect x="440" y="104" width="230" height="40" rx="6" fill="#d1fae5" stroke="#059669"/>
+  <text x="555" y="129" text-anchor="middle" font-size="12" font-weight="700" fill="#065f46">Uptime 正常运行</text>
+
+  <rect x="670" y="104" width="170" height="40" rx="6" fill="#fef3c7" stroke="#d97706"/>
+  <text x="755" y="123" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">PM 计划保养</text>
+  <text x="755" y="137" text-anchor="middle" font-size="10" fill="#92400e">Scheduled</text>
+
+  <!-- MTBF 括号 -->
+  <path d="M60 156 L60 168 L280 168" stroke="#059669" stroke-width="2" fill="none"/>
+  <path d="M290 156 L290 168" stroke="#059669" stroke-width="2" fill="none"/>
+  <text x="170" y="184" text-anchor="middle" font-size="12" font-weight="700" fill="#059669">MTBF 平均无故障时间（两次故障之间）</text>
+
+  <path d="M440 156 L440 168 L660 168" stroke="#059669" stroke-width="2" fill="none"/>
+  <path d="M670 156 L670 168" stroke="#059669" stroke-width="2" fill="none"/>
+  <text x="555" y="184" text-anchor="middle" font-size="12" font-weight="700" fill="#059669">MTBF 越长越好</text>
+
+  <text x="60" y="204" font-size="11.5" fill="#64748b">Availability 可用率 = MTBF / (MTBF + MTTR)　——　想提高可用率，要么少坏，要么快修</text>
+
+  <!-- OEE -->
+  <text x="40" y="240" font-size="14" font-weight="700" fill="#7c3aed">OEE 综合效率：三个数相乘</text>
+  <rect x="40" y="254" width="820" height="96" rx="10" fill="#faf5ff" stroke="#c4b5fd"/>
+  <text x="450" y="296" text-anchor="middle" font-size="20" font-weight="700" fill="#5b21b6">OEE = 可用率 × 性能效率 × 质量率</text>
+  <g font-size="11.5">
+    <rect x="60" y="308" width="250" height="32" rx="6" fill="#ffffff" stroke="#c4b5fd"/>
+    <text x="76" y="328" fill="#334155">可用率 = 实际运行 / 计划运行</text>
+
+    <rect x="325" y="308" width="250" height="32" rx="6" fill="#ffffff" stroke="#c4b5fd"/>
+    <text x="341" y="328" fill="#334155">性能 = 实际产出 / 理论产出</text>
+
+    <rect x="590" y="308" width="250" height="32" rx="6" fill="#ffffff" stroke="#c4b5fd"/>
+    <text x="606" y="328" fill="#334155">质量 = 良品 / 总产出</text>
+  </g>
+
+  <!-- 提升手段 -->
+  <text x="40" y="376" font-size="14" font-weight="700" fill="#059669">提升 OEE：知道该拉哪根杠杆</text>
+  <g font-size="11.5">
+    <rect x="40" y="390" width="265" height="62" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="56" y="412" font-weight="700" fill="#065f46">拉「可用率」</text>
+    <text x="56" y="430" fill="#1e293b">缩短 PM 时间（并行作业、预置备件）</text>
+    <text x="56" y="446" fill="#1e293b">预测性维护、减少 Non-scheduled Down</text>
+
+    <rect x="317" y="390" width="265" height="62" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="333" y="412" font-weight="700" fill="#065f46">拉「性能效率」</text>
+    <text x="333" y="430" fill="#1e293b">缩短单片工艺时间、减少空转与</text>
+    <text x="333" y="446" fill="#1e293b">Recipe 切换、降低 Idle 与排队等待</text>
+
+    <rect x="594" y="390" width="266" height="62" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="610" y="412" font-weight="700" fill="#065f46">拉「质量率」</text>
+    <text x="610" y="430" fill="#1e293b">降低颗粒、提升机台间匹配</text>
+    <text x="610" y="446" fill="#1e293b">减少 Rework 与 Scrap</text>
+  </g>
+
+  <rect x="40" y="458" width="820" height="0" fill="none"/>
+</svg>

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="450" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">晶圆制造 8 大工艺模块与 CMOS 集成流程</text>
+
+  <!-- 8大模块环 -->
+  <text x="40" y="66" font-size="14" font-weight="700" fill="#2563eb">八大模块（Fab 的组织就是按这个切的，EE/PE 都会被分到某个 module）</text>
+
+  <g font-size="11.5">
+    <rect x="40" y="82" width="180" height="52" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+    <text x="130" y="104" text-anchor="middle" font-weight="700" fill="#1e40af">① 清洗 Cleaning</text>
+    <text x="130" y="122" text-anchor="middle" fill="#334155">RCA / SC-1 / SC-2 / DHF</text>
+
+    <rect x="240" y="82" width="180" height="52" rx="8" fill="#d1fae5" stroke="#059669"/>
+    <text x="330" y="104" text-anchor="middle" font-weight="700" fill="#065f46">② 薄膜 Deposition</text>
+    <text x="330" y="122" text-anchor="middle" fill="#334155">CVD / PVD / ALD / Epi</text>
+
+    <rect x="440" y="82" width="180" height="52" rx="8" fill="#fef3c7" stroke="#d97706"/>
+    <text x="530" y="104" text-anchor="middle" font-weight="700" fill="#92400e">③ 光刻 Litho</text>
+    <text x="530" y="122" text-anchor="middle" fill="#334155">涂胶 / 曝光 / 显影</text>
+
+    <rect x="640" y="82" width="180" height="52" rx="8" fill="#fee2e2" stroke="#dc2626"/>
+    <text x="730" y="104" text-anchor="middle" font-weight="700" fill="#991b1b">④ 刻蚀 Etch</text>
+    <text x="730" y="122" text-anchor="middle" fill="#334155">干法 / 湿法 / 去胶</text>
+
+    <rect x="40" y="146" width="180" height="52" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
+    <text x="130" y="168" text-anchor="middle" font-weight="700" fill="#5b21b6">⑤ 掺杂 Doping</text>
+    <text x="130" y="186" text-anchor="middle" fill="#334155">离子注入 / 扩散 / 退火</text>
+
+    <rect x="240" y="146" width="180" height="52" rx="8" fill="#cffafe" stroke="#0891b2"/>
+    <text x="330" y="168" text-anchor="middle" font-weight="700" fill="#155e75">⑥ 平坦化 CMP</text>
+    <text x="330" y="186" text-anchor="middle" fill="#334155">化学机械抛光</text>
+
+    <rect x="440" y="146" width="180" height="52" rx="8" fill="#fce7f3" stroke="#db2777"/>
+    <text x="530" y="168" text-anchor="middle" font-weight="700" fill="#9d174d">⑦ 量测 Metrology</text>
+    <text x="530" y="186" text-anchor="middle" fill="#334155">CD / 膜厚 / Overlay / 缺陷</text>
+
+    <rect x="640" y="146" width="180" height="52" rx="8" fill="#e2e8f0" stroke="#475569"/>
+    <text x="730" y="168" text-anchor="middle" font-weight="700" fill="#334155">⑧ 热处理 Thermal</text>
+    <text x="730" y="186" text-anchor="middle" fill="#334155">氧化 / 退火 / RTA</text>
+  </g>
+
+  <!-- FEOL/BEOL 流程 -->
+  <text x="40" y="228" font-size="14" font-weight="700" fill="#059669">集成流程：FEOL 做晶体管，BEOL 做连线</text>
+
+  <rect x="40" y="244" width="380" height="26" rx="6" fill="#d1fae5" stroke="#059669"/>
+  <text x="230" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="#065f46">FEOL 前段：把晶体管做出来</text>
+  <rect x="440" y="244" width="420" height="26" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="650" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">BEOL 后段：把晶体管连成电路</text>
+
+  <!-- 步骤箭头 -->
+  <g font-size="10.5">
+    <rect x="40" y="286" width="118" height="46" rx="6" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="99" y="304" text-anchor="middle" font-weight="700" fill="#334155">STI</text>
+    <text x="99" y="320" text-anchor="middle" fill="#64748b">浅沟槽隔离</text>
+
+    <rect x="168" y="286" width="118" height="46" rx="6" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="227" y="304" text-anchor="middle" font-weight="700" fill="#334155">Well</text>
+    <text x="227" y="320" text-anchor="middle" fill="#64748b">阱注入</text>
+
+    <rect x="296" y="286" width="124" height="46" rx="6" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="358" y="304" text-anchor="middle" font-weight="700" fill="#334155">Gate</text>
+    <text x="358" y="320" text-anchor="middle" fill="#64748b">栅氧+多晶硅</text>
+
+    <rect x="440" y="286" width="118" height="46" rx="6" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="499" y="304" text-anchor="middle" font-weight="700" fill="#334155">Contact</text>
+    <text x="499" y="320" text-anchor="middle" fill="#64748b">钨塞 CT</text>
+
+    <rect x="568" y="286" width="118" height="46" rx="6" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="627" y="304" text-anchor="middle" font-weight="700" fill="#334155">M1 金属</text>
+    <text x="627" y="320" text-anchor="middle" fill="#64748b">双大马士革</text>
+
+    <rect x="696" y="286" width="164" height="46" rx="6" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="778" y="304" text-anchor="middle" font-weight="700" fill="#334155">Via + Mx 重复</text>
+    <text x="778" y="320" text-anchor="middle" fill="#64748b">可达 10+ 层金属</text>
+  </g>
+
+  <path d="M158 309 L166 309" stroke="#94a3b8" stroke-width="2" marker-end="url(#a1)"/>
+  <path d="M286 309 L294 309" stroke="#94a3b8" stroke-width="2" marker-end="url(#a1)"/>
+  <path d="M420 309 L438 309" stroke="#94a3b8" stroke-width="2" marker-end="url(#a1)"/>
+  <path d="M558 309 L566 309" stroke="#94a3b8" stroke-width="2" marker-end="url(#a1)"/>
+  <path d="M686 309 L694 309" stroke="#94a3b8" stroke-width="2" marker-end="url(#a1)"/>
+  <defs><marker id="a1" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#94a3b8"/></marker></defs>
+
+  <!-- 循环圈 -->
+  <text x="40" y="360" font-size="14" font-weight="700" fill="#7c3aed">核心循环：一张图看懂 90% 的 Fab 工序</text>
+
+  <rect x="40" y="376" width="820" height="98" rx="10" fill="#faf5ff" stroke="#c4b5fd"/>
+  <g font-size="12.5">
+    <text x="70" y="404" font-weight="700" fill="#5b21b6">沉积一层膜</text>
+    <text x="200" y="404" font-weight="700" fill="#5b21b6">涂光刻胶</text>
+    <text x="330" y="404" font-weight="700" fill="#5b21b6">曝光显影出图形</text>
+    <text x="490" y="404" font-weight="700" fill="#5b21b6">刻蚀掉暴露部分</text>
+    <text x="650" y="404" font-weight="700" fill="#5b21b6">去胶 + 清洗</text>
+    <text x="790" y="404" font-weight="700" fill="#5b21b6">量测</text>
+  </g>
+  <g font-size="11" fill="#64748b">
+    <text x="70" y="424">CVD/PVD/氧化</text>
+    <text x="200" y="424">Track</text>
+    <text x="330" y="424">Scanner/Stepper</text>
+    <text x="490" y="424">Etcher</text>
+    <text x="650" y="424">Asher/Strip</text>
+    <text x="790" y="424">CD/膜厚</text>
+  </g>
+  <path d="M140 440 L170 440" stroke="#7c3aed" stroke-width="2" marker-end="url(#a2)"/>
+  <path d="M280 440 L310 440" stroke="#7c3aed" stroke-width="2" marker-end="url(#a2)"/>
+  <path d="M440 440 L470 440" stroke="#7c3aed" stroke-width="2" marker-end="url(#a2)"/>
+  <path d="M600 440 L630 440" stroke="#7c3aed" stroke-width="2" marker-end="url(#a2)"/>
+  <path d="M745 440 L775 440" stroke="#7c3aed" stroke-width="2" marker-end="url(#a2)"/>
+  <path d="M830 440 L830 462 L60 462 L60 440" stroke="#7c3aed" stroke-width="2" fill="none" stroke-dasharray="6 4" marker-end="url(#a2)"/>
+  <text x="445" y="478" text-anchor="middle" font-size="11.5" fill="#5b21b6">一片先进逻辑芯片要重复这个循环 60~100+ 次，用到 600~1000+ 道工序</text>
+  <defs><marker id="a2" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#7c3aed"/></marker></defs>
+</svg>

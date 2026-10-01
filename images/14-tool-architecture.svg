@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="900" height="520" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">一台刻蚀机长什么样：EE 要认的 10 个子系统</text>
+
+  <!-- 主图 -->
+  <rect x="40" y="52" width="480" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+
+  <!-- EFEM / Load port -->
+  <rect x="60" y="72" width="90" height="70" rx="6" fill="#e2e8f0" stroke="#64748b"/>
+  <text x="105" y="98" text-anchor="middle" font-size="11" font-weight="700" fill="#334155">Load Port</text>
+  <text x="105" y="114" text-anchor="middle" font-size="9.5" fill="#64748b">FOUP 上料口</text>
+  <rect x="160" y="82" width="60" height="50" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="190" y="112" text-anchor="middle" font-size="10" font-weight="700" fill="#1e40af">EFEM</text>
+  <text x="190" y="126" text-anchor="middle" font-size="9" fill="#1e40af">大气机械手</text>
+
+  <!-- 传送腔 -->
+  <rect x="230" y="72" width="130" height="70" rx="6" fill="#d1fae5" stroke="#059669"/>
+  <text x="295" y="100" text-anchor="middle" font-size="11" font-weight="700" fill="#065f46">Transfer Chamber</text>
+  <text x="295" y="116" text-anchor="middle" font-size="9.5" fill="#334155">真空机械手（Robot）</text>
+  <text x="295" y="132" text-anchor="middle" font-size="9.5" fill="#334155">+ 真空隔离阀</text>
+
+  <!-- Load lock -->
+  <rect x="370" y="72" width="60" height="70" rx="6" fill="#fef3c7" stroke="#d97706"/>
+  <text x="400" y="106" text-anchor="middle" font-size="10" font-weight="700" fill="#92400e">Load</text>
+  <text x="400" y="120" text-anchor="middle" font-size="10" font-weight="700" fill="#92400e">Lock</text>
+  <text x="400" y="134" text-anchor="middle" font-size="9" fill="#92400e">大气↔真空</text>
+
+  <!-- 工艺腔（三个） -->
+  <g>
+    <rect x="230" y="160" width="130" height="140" rx="6" fill="#fee2e2" stroke="#dc2626"/>
+    <text x="295" y="180" text-anchor="middle" font-size="11" font-weight="700" fill="#991b1b">Process Chamber ①</text>
+    <!-- 喷淋头 -->
+    <rect x="250" y="190" width="90" height="12" fill="#94a3b8"/>
+    <text x="295" y="200" text-anchor="middle" font-size="8" fill="#ffffff">Shower Head（上电极）</text>
+    <!-- 等离子体 -->
+    <rect x="250" y="206" width="90" height="28" fill="#fecaca"/>
+    <text x="295" y="224" text-anchor="middle" font-size="9" font-weight="700" fill="#991b1b">Plasma</text>
+    <!-- ESC + wafer -->
+    <rect x="262" y="240" width="66" height="10" fill="#475569"/>
+    <rect x="272" y="234" width="46" height="6" fill="#fbbf24"/>
+    <text x="295" y="264" text-anchor="middle" font-size="8.5" fill="#334155">ESC 静电吸盘 + Wafer</text>
+    <!-- He 背冷 -->
+    <text x="295" y="278" text-anchor="middle" font-size="8.5" fill="#0891b2">He 背面冷却通道</text>
+    <text x="295" y="292" text-anchor="middle" font-size="8.5" fill="#64748b">Chiller 控温</text>
+  </g>
+
+  <g>
+    <rect x="370" y="160" width="60" height="140" rx="6" fill="#fee2e2" stroke="#dc2626" opacity="0.6"/>
+    <text x="400" y="200" text-anchor="middle" font-size="10" font-weight="700" fill="#991b1b">Chamber ②</text>
+    <text x="400" y="216" text-anchor="middle" font-size="8.5" fill="#991b1b">（镜像）</text>
+  </g>
+  <g>
+    <rect x="60" y="160" width="150" height="140" rx="6" fill="#f1f5f9" stroke="#64748b"/>
+    <text x="135" y="184" text-anchor="middle" font-size="11" font-weight="700" fill="#334155">Gas Box 气柜</text>
+    <text x="135" y="202" text-anchor="middle" font-size="9" fill="#64748b">MFC × N</text>
+    <text x="135" y="218" text-anchor="middle" font-size="9" fill="#64748b">气动阀 / 单向阀</text>
+    <text x="135" y="234" text-anchor="middle" font-size="9" fill="#64748b">VMB 多路阀箱</text>
+    <text x="135" y="252" text-anchor="middle" font-size="9" fill="#dc2626">特气：Cl₂/HBr/CF₄</text>
+    <text x="135" y="268" text-anchor="middle" font-size="9" fill="#dc2626">有毒/腐蚀 → 双套管</text>
+    <text x="135" y="286" text-anchor="middle" font-size="9" fill="#64748b">Gas Detector 侦测器</text>
+  </g>
+
+  <!-- RF -->
+  <rect x="230" y="312" width="200" height="60" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="330" y="332" text-anchor="middle" font-size="11" font-weight="700" fill="#5b21b6">RF 系统</text>
+  <text x="330" y="348" text-anchor="middle" font-size="9" fill="#334155">Generator → Match → 电极</text>
+  <text x="330" y="362" text-anchor="middle" font-size="9" fill="#64748b">13.56MHz / 附 Bias RF</text>
+
+  <!-- 泵 -->
+  <rect x="60" y="312" width="150" height="60" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="135" y="332" text-anchor="middle" font-size="11" font-weight="700" fill="#1e40af">真空泵组</text>
+  <text x="135" y="348" text-anchor="middle" font-size="9" fill="#334155">Turbo + Dry Pump</text>
+  <text x="135" y="362" text-anchor="middle" font-size="9" fill="#64748b">+ Scrubber 尾气处理</text>
+
+  <rect x="440" y="312" width="60" height="60" rx="6" fill="#cffafe" stroke="#0891b2"/>
+  <text x="470" y="336" text-anchor="middle" font-size="10" font-weight="700" fill="#155e75">Chiller</text>
+  <text x="470" y="352" text-anchor="middle" font-size="9" fill="#334155">冷却</text>
+  <text x="470" y="364" text-anchor="middle" font-size="8.5" fill="#64748b">/ 加热</text>
+
+  <!-- 子系统清单 -->
+  <text x="545" y="72" font-size="14" font-weight="700" fill="#2563eb">EE 要认的 10 个子系统</text>
+  <g font-size="11">
+    <rect x="545" y="86" width="315" height="292" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="563" y="108" font-weight="700" fill="#1e40af">①  真空系统</text><text x="700" y="108" fill="#64748b">泵 / 阀 / 规 / 密封</text>
+    <text x="563" y="130" font-weight="700" fill="#1e40af">②  气体输送</text><text x="700" y="130" fill="#64748b">MFC / VMB / 管路</text>
+    <text x="563" y="152" font-weight="700" fill="#1e40af">③  RF / 微波</text><text x="700" y="152" fill="#64748b">电源 / 匹配 / 电缆</text>
+    <text x="563" y="174" font-weight="700" fill="#1e40af">④  温控系统</text><text x="700" y="174" fill="#64748b">Chiller / Heater / TC</text>
+    <text x="563" y="196" font-weight="700" fill="#1e40af">⑤  晶圆传输</text><text x="700" y="196" fill="#64748b">Robot / EFEM / Aligner</text>
+    <text x="563" y="218" font-weight="700" fill="#1e40af">⑥  运动控制</text><text x="700" y="218" fill="#64748b">伺服电机 / 编码器</text>
+    <text x="563" y="240" font-weight="700" fill="#1e40af">⑦  电气控制</text><text x="700" y="240" fill="#64748b">PLC / I/O / Interlock</text>
+    <text x="563" y="262" font-weight="700" fill="#1e40af">⑧  传感检测</text><text x="700" y="262" fill="#64748b">压力/温度/流量/光学</text>
+    <text x="563" y="284" font-weight="700" fill="#1e40af">⑨  软件系统</text><text x="700" y="284" fill="#64748b">OS / Recipe / FDC / Log</text>
+    <text x="563" y="306" font-weight="700" fill="#1e40af">⑩  厂务接口</text><text x="700" y="306" fill="#64748b">电/水/气/排/化学品</text>
+
+    <text x="563" y="336" font-size="11" fill="#dc2626">耗材 Parts：O-ring、ESC、Shower Head、</text>
+    <text x="563" y="354" font-size="11" fill="#dc2626">Liner/Shield、泵油、过滤器、电极</text>
+    <text x="563" y="372" font-size="11" fill="#64748b">耗材寿命管理 = EE 控制成本与 PM 周期的核心</text>
+  </g>
+
+  <!-- 底部 -->
+  <rect x="40" y="398" width="820" height="108" rx="10" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="58" y="422" font-size="13" font-weight="700" fill="#1e40af">机台怎么"抓"住晶圆：ESC 静电吸盘（高频考点）</text>
+  <text x="58" y="444" font-size="11.5" fill="#1e293b">ESC 靠 Coulomb 力（介电层静电吸附）或 Johnsen-Rahbek 效应把晶圆吸住，背面通 He 气（数 Torr）做导热介质把热量带走。</text>
+  <text x="58" y="462" font-size="11.5" fill="#1e293b">真空里没有空气对流，散热只能靠 He 背冷 + 辐射；He 漏了 → 晶圆温度失控 → 刻蚀速率漂移、均匀性变差。</text>
+  <text x="58" y="480" font-size="11.5" fill="#64748b">常见故障：He Leak、De-chuck 不下来（残留电荷 → 需反向电压/延时释放）、ESC 表面涂层磨损导致吸附力下降、背面颗粒造成晶圆翘曲。</text>
+  <text x="58" y="498" font-size="11.5" fill="#64748b">对齐与定位：Aligner 用光学传感器找 Notch/平边做 Wafer Alignment，机械手靠编码器 + Teach 点位保证重复定位精度。</text>
+</svg>

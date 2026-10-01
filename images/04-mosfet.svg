@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" width="900" height="540" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="900" height="540" fill="#ffffff"/>
+  <text x="450" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">MOSFET：栅极一加压，沟道就"长"出来</text>
+
+  <!-- 结构剖面 -->
+  <text x="40" y="66" font-size="14" font-weight="700" fill="#2563eb">N-MOS 截面结构（左：截止 / 右：导通）</text>
+
+  <!-- 左：截止 -->
+  <g>
+    <rect x="60" y="120" width="240" height="26" fill="#475569"/>
+    <text x="180" y="138" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Gate 栅极（Poly / Metal）</text>
+    <rect x="110" y="146" width="140" height="22" fill="#fef3c7" stroke="#d97706"/>
+    <text x="180" y="161" text-anchor="middle" font-size="11" fill="#92400e">Gate Oxide 栅氧（SiO₂ / High-k）</text>
+
+    <rect x="60" y="168" width="240" height="90" fill="#f1f5f9"/>
+    <text x="180" y="215" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">P-Well（P 型衬底）</text>
+
+    <rect x="60" y="168" width="62" height="90" fill="#fee2e2"/>
+    <text x="91" y="206" text-anchor="middle" font-size="11" font-weight="700" fill="#991b1b">Source</text>
+    <text x="91" y="222" text-anchor="middle" font-size="10" fill="#991b1b">N+ 源极</text>
+    <rect x="238" y="168" width="62" height="90" fill="#fee2e2"/>
+    <text x="269" y="206" text-anchor="middle" font-size="11" font-weight="700" fill="#991b1b">Drain</text>
+    <text x="269" y="222" text-anchor="middle" font-size="10" fill="#991b1b">N+ 漏极</text>
+
+    <text x="180" y="282" text-anchor="middle" font-size="12.5" fill="#dc2626">Vg = 0：源漏之间是两个背靠背的 PN 结 → 不导通</text>
+    <text x="180" y="306" text-anchor="middle" font-size="12" fill="#64748b">栅极与衬底之间 = 一个电容</text>
+  </g>
+
+  <!-- 右：导通 -->
+  <g>
+    <rect x="380" y="120" width="240" height="26" fill="#475569"/>
+    <text x="500" y="138" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Gate 栅极（加正压 Vg &gt; Vt）</text>
+    <rect x="430" y="146" width="140" height="22" fill="#fef3c7" stroke="#d97706"/>
+    <text x="500" y="161" text-anchor="middle" font-size="11" fill="#92400e">栅氧</text>
+
+    <rect x="380" y="168" width="240" height="90" fill="#f1f5f9"/>
+    <rect x="442" y="172" width="116" height="16" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+    <text x="500" y="185" text-anchor="middle" font-size="10.5" font-weight="700" fill="#065f46">反型沟道 Channel（电子）</text>
+
+    <rect x="380" y="168" width="62" height="90" fill="#fee2e2"/>
+    <text x="411" y="210" text-anchor="middle" font-size="11" font-weight="700" fill="#991b1b">Source</text>
+    <rect x="558" y="168" width="62" height="90" fill="#fee2e2"/>
+    <text x="589" y="210" text-anchor="middle" font-size="11" font-weight="700" fill="#991b1b">Drain</text>
+
+    <path d="M411 250 L500 250 L589 250" stroke="#059669" stroke-width="0" fill="none"/>
+    <text x="500" y="282" text-anchor="middle" font-size="12.5" fill="#059669">Vg &gt; Vt：栅氧下感应出电子反型层 → 源漏导通</text>
+    <text x="500" y="306" text-anchor="middle" font-size="12" fill="#64748b">Vg 越大 → 沟道电子越多 → Id 越大</text>
+  </g>
+
+  <!-- 右侧箭头 -->
+  <path d="M310 200 L370 200" stroke="#059669" stroke-width="3" marker-end="url(#am)"/>
+  <text x="340" y="192" text-anchor="middle" font-size="11" fill="#059669">加压</text>
+  <defs><marker id="am" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#059669"/></marker></defs>
+
+  <!-- 三个关键参数 -->
+  <text x="40" y="342" font-size="14" font-weight="700" fill="#7c3aed">PE 每天盯的电性参数（WAT / E-test 量测）</text>
+
+  <rect x="40" y="356" width="270" height="86" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="56" y="380" font-size="13" font-weight="700" fill="#1e40af">Vt 阈值电压</text>
+  <text x="56" y="400" font-size="11.5" fill="#334155">由沟道掺杂、栅氧厚度、</text>
+  <text x="56" y="416" font-size="11.5" fill="#334155">栅材料功函数决定</text>
+  <text x="56" y="434" font-size="11.5" fill="#64748b">注入条件一变，Vt 就飘</text>
+
+  <rect x="330" y="356" width="270" height="86" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="346" y="380" font-size="13" font-weight="700" fill="#059669">Ion / Ioff</text>
+  <text x="346" y="400" font-size="11.5" fill="#334155">Ion：开态驱动电流（越快越好）</text>
+  <text x="346" y="416" font-size="11.5" fill="#334155">Ioff：关态漏电（越小越好）</text>
+  <text x="346" y="434" font-size="11.5" fill="#64748b">两者天然矛盾，是工艺窗口的根源</text>
+
+  <rect x="620" y="356" width="240" height="86" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="636" y="380" font-size="13" font-weight="700" fill="#d97706">Rs 方块电阻 / Rc</text>
+  <text x="636" y="400" font-size="11.5" fill="#334155">四探针量薄膜导电能力</text>
+  <text x="636" y="416" font-size="11.5" fill="#334155">Rs = ρ / t（ρ电阻率, t膜厚）</text>
+  <text x="636" y="434" font-size="11.5" fill="#64748b">注入 + 退火 PE 的核心 KPI</text>
+
+  <!-- 底部：短沟道效应 -->
+  <rect x="40" y="458" width="820" height="66" rx="10" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="58" y="482" font-size="13" font-weight="700" fill="#1e40af">为什么器件越做越小就"不听话"？短沟道效应（SCE）</text>
+  <text x="58" y="502" font-size="12" fill="#1e293b">沟道缩短 → 栅极控制力变弱 → Vt 随 L 下降（Vt roll-off）、漏极电场穿透到源端（DIBL）→ Ioff 飙升</text>
+  <text x="58" y="518" font-size="12" fill="#1e293b">解法：把栅极从"平面"变成"三面包围"（FinFET）再到"四面包围"（GAA 纳米片），靠结构换回控制力</text>
+</svg>

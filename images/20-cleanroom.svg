@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="900" height="450" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="900" height="450" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">无尘室 Cleanroom：Fab 的物理外壳</text>
+
+  <!-- 气流示意 -->
+  <text x="40" y="64" font-size="14" font-weight="700" fill="#2563eb">单向垂直层流：空气从上往下把颗粒"压"走</text>
+  <rect x="40" y="78" width="430" height="230" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+
+  <rect x="60" y="96" width="390" height="24" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="255" y="113" text-anchor="middle" font-size="11" fill="#1e40af">FFU 风机过滤单元 + HEPA/ULPA 高效过滤器</text>
+
+  <g stroke="#0891b2" stroke-width="1.5" fill="none" marker-end="url(#cl1)">
+    <path d="M100 120 L100 250"/><path d="M150 120 L150 250"/><path d="M200 120 L200 250"/>
+    <path d="M250 120 L250 250"/><path d="M300 120 L300 250"/><path d="M350 120 L350 250"/><path d="M400 120 L400 250"/>
+  </g>
+  <defs><marker id="cl1" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#0891b2"/></marker></defs>
+
+  <!-- 机台 -->
+  <rect x="150" y="180" width="150" height="60" rx="6" fill="#e2e8f0" stroke="#64748b"/>
+  <text x="225" y="214" text-anchor="middle" font-size="11" font-weight="700" fill="#334155">Process Tool</text>
+
+  <!-- 地板回风 -->
+  <rect x="60" y="262" width="390" height="22" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="255" y="277" text-anchor="middle" font-size="10.5" fill="#334155">高架地板（穿孔回风）→ 下层回风道 → 循环</text>
+
+  <text x="60" y="300" font-size="11" fill="#64748b">洁净区维持正压（相对走廊/外部），防止脏空气倒灌</text>
+
+  <!-- 等级 -->
+  <text x="490" y="64" font-size="14" font-weight="700" fill="#059669">洁净度等级</text>
+  <rect x="490" y="78" width="370" height="230" rx="10" fill="#ecfdf5" stroke="#6ee7b7"/>
+  <g font-size="11.5">
+    <text x="508" y="104" font-weight="700" fill="#065f46">ISO 14644 标准：ISO 1（最干净）~ ISO 9</text>
+    <text x="508" y="128" fill="#334155">ISO 5 = 传统 Class 100（≥0.5μm 颗粒 ≤3520 个/m³）</text>
+    <text x="508" y="148" fill="#334155">ISO 4 = Class 10　ISO 6 = Class 1000</text>
+    <text x="508" y="176" font-weight="700" fill="#065f46">实际 Fab：</text>
+    <text x="508" y="196" fill="#1e293b">光刻区 / 曝光区最严格 → ISO 2~3</text>
+    <text x="508" y="216" fill="#1e293b">一般工艺区 → ISO 4~5</text>
+    <text x="508" y="236" fill="#1e293b">走廊 / 更衣区 → ISO 6~7</text>
+    <text x="508" y="264" font-weight="700" fill="#065f46">污染源三大类：</text>
+    <text x="508" y="284" fill="#1e293b">Particle 颗粒（人、机台摩擦、化学品）</text>
+    <text x="508" y="300" fill="#1e293b">AMC 分子污染（酸碱/有机物蒸气）</text>
+  </g>
+
+  <!-- 人为最大污染源 -->
+  <text x="40" y="330" font-size="14" font-weight="700" fill="#7c3aed">人是最大的污染源：洁净服规范</text>
+  <g font-size="11.5">
+    <rect x="40" y="344" width="270" height="80" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="56" y="366" font-weight="700" fill="#5b21b6">穿戴顺序（记住）</text>
+    <text x="56" y="386" fill="#1e293b">发网 → 口罩 → 连体服 → 手套 →</text>
+    <text x="56" y="402" fill="#1e293b">靴套 → 风淋 Air Shower → 粘尘垫</text>
+    <text x="56" y="418" fill="#64748b">动作要慢，快走会带起颗粒</text>
+
+    <rect x="325" y="344" width="270" height="80" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="341" y="366" font-weight="700" fill="#5b21b6">在线纪律</text>
+    <text x="341" y="386" fill="#1e293b">禁止跑动、禁止在洁净室内脱手套</text>
+    <text x="341" y="402" fill="#1e293b">笔/纸要用洁净专用（无尘纸/无尘笔）</text>
+    <text x="341" y="418" fill="#64748b">手机一般不允许带入核心区</text>
+
+    <rect x="610" y="344" width="250" height="80" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="626" y="366" font-weight="700" fill="#5b21b6">常用监测</text>
+    <text x="626" y="386" fill="#1e293b">Particle Counter 粒子计数器</text>
+    <text x="626" y="402" fill="#1e293b">温湿度、压差、风速、振动</text>
+    <text x="626" y="418" fill="#64748b">Microwatt 振动对光刻机是大事</text>
+  </g>
+
+  <rect x="40" y="434" width="820" height="0" fill="none"/>
+</svg>

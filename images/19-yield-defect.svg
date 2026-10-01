@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" width="900" height="470" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="900" height="470" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">良率 Yield：Fab 唯一的终极 KPI</text>
+
+  <!-- 良率模型 -->
+  <text x="40" y="64" font-size="14" font-weight="700" fill="#2563eb">三个经典良率模型（记住 Poole / Murphy）</text>
+  <g font-size="12">
+    <rect x="40" y="78" width="270" height="86" rx="10" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="58" y="102" font-weight="700" fill="#1e40af">指数模型</text>
+    <text x="58" y="128" text-anchor="middle" font-size="15" font-weight="700" fill="#1e40af">Y = e^(−A·D)</text>
+    <text x="58" y="152" font-size="11" fill="#334155">A=芯片面积，D=缺陷密度</text>
+
+    <rect x="325" y="78" width="270" height="86" rx="10" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="343" y="102" font-weight="700" fill="#1e40af">Murphy 模型</text>
+    <text x="343" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#1e40af">Y = [(1−e^(−AD))/(AD)]²</text>
+    <text x="343" y="152" font-size="11" fill="#334155">业界最常用</text>
+
+    <rect x="610" y="78" width="250" height="86" rx="10" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="628" y="102" font-weight="700" fill="#1e40af">良率分解</text>
+    <text x="628" y="124" font-size="11.5" fill="#334155">Y = Y<sub>line</sub> × Y<sub>parametric</sub></text>
+    <text x="628" y="142" font-size="11.5" fill="#334155">× Y<sub>functional</sub></text>
+    <text x="628" y="158" font-size="10.5" fill="#64748b">线良率 / 参数良率 / 功能良率</text>
+  </g>
+
+  <!-- 曲线 -->
+  <rect x="40" y="176" width="400" height="150" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="230" y="198" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">缺陷密度 vs 良率（面积越大越吃亏）</text>
+  <line x1="70" y1="320" x2="430" y2="320" stroke="#475569" stroke-width="1.5"/>
+  <line x1="70" y1="320" x2="70" y2="212" stroke="#475569" stroke-width="1.5"/>
+  <text x="180" y="336" font-size="10.5" fill="#64748b">缺陷密度 D（个/cm²）→</text>
+  <text x="52" y="220" font-size="10.5" fill="#64748b">Y</text>
+  <path d="M70 218 C120 222 170 240 220 270 C280 300 360 314 430 317" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+  <text x="300" y="290" font-size="10.5" fill="#2563eb">小芯片 A=0.5cm²</text>
+  <path d="M70 218 C110 232 150 268 200 300 C260 312 360 318 430 318" stroke="#dc2626" stroke-width="2.5" fill="none"/>
+  <text x="240" y="252" font-size="10.5" fill="#dc2626">大芯片 A=3cm²</text>
+  <text x="70" y="212" font-size="10" fill="#334155">100%</text>
+  <text x="70" y="322" font-size="10" fill="#334155">0</text>
+
+  <!-- Bin map -->
+  <text x="460" y="176" font-size="14" font-weight="700" fill="#059669">Wafer Bin Map：一眼看出缺陷的"指纹"</text>
+  <rect x="460" y="190" width="400" height="136" rx="10" fill="#ecfdf5" stroke="#6ee7b7"/>
+  <g>
+    <circle cx="660" cy="256" r="72" fill="#e2e8f0" stroke="#94a3b8"/>
+    <g>
+      <rect x="612" y="212" width="12" height="12" fill="#16a34a"/><rect x="628" y="212" width="12" height="12" fill="#16a34a"/><rect x="644" y="212" width="12" height="12" fill="#16a34a"/><rect x="660" y="212" width="12" height="12" fill="#16a34a"/><rect x="676" y="212" width="12" height="12" fill="#dc2626"/>
+      <rect x="604" y="228" width="12" height="12" fill="#16a34a"/><rect x="620" y="228" width="12" height="12" fill="#16a34a"/><rect x="636" y="228" width="12" height="12" fill="#16a34a"/><rect x="652" y="228" width="12" height="12" fill="#16a34a"/><rect x="668" y="228" width="12" height="12" fill="#16a34a"/><rect x="684" y="228" width="12" height="12" fill="#dc2626"/><rect x="700" y="228" width="12" height="12" fill="#dc2626"/>
+      <rect x="596" y="244" width="12" height="12" fill="#16a34a"/><rect x="612" y="244" width="12" height="12" fill="#16a34a"/><rect x="628" y="244" width="12" height="12" fill="#dc2626"/><rect x="644" y="244" width="12" height="12" fill="#dc2626"/><rect x="660" y="244" width="12" height="12" fill="#dc2626"/><rect x="676" y="244" width="12" height="12" fill="#dc2626"/><rect x="692" y="244" width="12" height="12" fill="#dc2626"/><rect x="708" y="244" width="12" height="12" fill="#dc2626"/>
+      <rect x="596" y="260" width="12" height="12" fill="#16a34a"/><rect x="612" y="260" width="12" height="12" fill="#16a34a"/><rect x="628" y="260" width="12" height="12" fill="#dc2626"/><rect x="644" y="260" width="12" height="12" fill="#dc2626"/><rect x="660" y="260" width="12" height="12" fill="#dc2626"/><rect x="676" y="260" width="12" height="12" fill="#dc2626"/><rect x="692" y="260" width="12" height="12" fill="#dc2626"/><rect x="708" y="260" width="12" height="12" fill="#dc2626"/>
+      <rect x="604" y="276" width="12" height="12" fill="#16a34a"/><rect x="620" y="276" width="12" height="12" fill="#16a34a"/><rect x="636" y="276" width="12" height="12" fill="#dc2626"/><rect x="652" y="276" width="12" height="12" fill="#dc2626"/><rect x="668" y="276" width="12" height="12" fill="#dc2626"/><rect x="684" y="276" width="12" height="12" fill="#dc2626"/><rect x="700" y="276" width="12" height="12" fill="#dc2626"/>
+      <rect x="620" y="292" width="12" height="12" fill="#16a34a"/><rect x="636" y="292" width="12" height="12" fill="#dc2626"/><rect x="652" y="292" width="12" height="12" fill="#dc2626"/><rect x="668" y="292" width="12" height="12" fill="#dc2626"/><rect x="684" y="292" width="12" height="12" fill="#dc2626"/>
+    </g>
+    <text x="660" y="330" text-anchor="middle" font-size="10.5" fill="#64748b">右侧半圆形失效 → 典型机台局部问题（如手印/夹具）</text>
+  </g>
+
+  <!-- 缺陷类型指纹 -->
+  <text x="40" y="348" font-size="14" font-weight="700" fill="#7c3aed">看图形猜原因（YE/PE 的"指纹学"）</text>
+  <g font-size="11">
+    <rect x="40" y="362" width="200" height="52" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="56" y="382" font-weight="700" fill="#5b21b6">整片均匀失效</text>
+    <text x="56" y="400" fill="#334155">→ 工艺参数整体偏移</text>
+
+    <rect x="250" y="362" width="200" height="52" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="266" y="382" font-weight="700" fill="#5b21b6">中心/边缘环状</text>
+    <text x="266" y="400" fill="#334155">→ 温度、气流、均匀性</text>
+
+    <rect x="460" y="362" width="200" height="52" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="476" y="382" font-weight="700" fill="#5b21b6">随机散点</text>
+    <text x="476" y="400" fill="#334155">→ 颗粒 Particle</text>
+
+    <rect x="670" y="362" width="190" height="52" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="686" y="382" font-weight="700" fill="#5b21b6">重复图形/划痕</text>
+    <text x="686" y="400" fill="#334155">→ 光罩或机械手</text>
+  </g>
+
+  <rect x="40" y="428" width="820" height="34" rx="8" fill="#fff7ed" stroke="#fb923c"/>
+  <text x="58" y="448" font-size="11.5" fill="#9a3412">关键概念：Killer Defect（致命缺陷，一颗就毁一颗 Die）、Defect Density（D0，缺陷密度）、Yield Ramp（良率爬坡，量产初期最重要的事）。</text>
+  <text x="58" y="462" font-size="11.5" fill="#9a3412">工程师价值公式：良率每提升 1 个百分点，对一座月产 5 万片的 12 寸厂可能就是数千万级别的年收益。</text>
+</svg>

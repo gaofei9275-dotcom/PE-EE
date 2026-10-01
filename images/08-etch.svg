@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="900" height="480" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">刻蚀 Etch：把光刻胶上的图形"转印"到下面的膜</text>
+
+  <!-- 湿法 vs 干法 -->
+  <text x="40" y="64" font-size="14" font-weight="700" fill="#2563eb">湿法 vs 干法：一个各向同性，一个各向异性</text>
+
+  <g>
+    <rect x="40" y="78" width="400" height="150" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="240" y="102" text-anchor="middle" font-size="13" font-weight="700" fill="#0891b2">湿法 Wet Etch（浸泡化学品）</text>
+    <!-- 示意 -->
+    <rect x="70" y="118" width="340" height="30" fill="#e2e8f0"/>
+    <rect x="70" y="148" width="340" height="30" fill="#cbd5e1"/>
+    <path d="M150 148 q-16 16 0 26 q16 10 0 20" stroke="#0891b2" stroke-width="2" fill="none"/>
+    <path d="M250 148 q-16 16 0 26 q16 10 0 20" stroke="#0891b2" stroke-width="2" fill="none"/>
+    <path d="M350 148 q-16 16 0 26 q16 10 0 20" stroke="#0891b2" stroke-width="2" fill="none"/>
+    <rect x="70" y="118" width="60" height="30" fill="#fbbf24"/>
+    <rect x="350" y="118" width="60" height="30" fill="#fbbf24"/>
+    <text x="70" y="212" font-size="11.5" fill="#334155">侧向也腐蚀（钻蚀 Undercut）→ 图形失真，做不了细线</text>
+    <text x="70" y="226" font-size="11.5" fill="#64748b">优点：选择比高、设备便宜、批量快 → 常用于去氧化层、清洗、剥离</text>
+  </g>
+
+  <g>
+    <rect x="460" y="78" width="400" height="150" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="660" y="102" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">干法 Dry / Plasma Etch（主流）</text>
+    <rect x="490" y="118" width="340" height="30" fill="#e2e8f0"/>
+    <rect x="490" y="148" width="340" height="30" fill="#cbd5e1"/>
+    <rect x="490" y="118" width="60" height="30" fill="#fbbf24"/>
+    <rect x="770" y="118" width="60" height="30" fill="#fbbf24"/>
+    <rect x="560" y="148" width="60" height="30" fill="#ffffff" stroke="#94a3b8"/>
+    <rect x="720" y="148" width="60" height="30" fill="#ffffff" stroke="#94a3b8"/>
+    <path d="M590 116 L590 108" stroke="#dc2626" stroke-width="1.5"/>
+    <path d="M610 116 L610 108" stroke="#dc2626" stroke-width="1.5"/>
+    <path d="M750 116 L750 108" stroke="#dc2626" stroke-width="1.5"/>
+    <path d="M770 116 L770 108" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="600" y="104" font-size="10" fill="#dc2626">离子垂直轰击</text>
+    <text x="490" y="212" font-size="11.5" fill="#334155">垂直方向优先 → 高深宽比结构能做出来</text>
+    <text x="490" y="226" font-size="11.5" fill="#64748b">缺点：设备贵、等离子体损伤、选择比不如湿法</text>
+  </g>
+
+  <!-- 三个机理 -->
+  <text x="40" y="256" font-size="14" font-weight="700" fill="#7c3aed">干法刻蚀的三种机理（面试高频）</text>
+  <g font-size="11.5">
+    <rect x="40" y="270" width="270" height="72" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="56" y="292" font-weight="700" fill="#5b21b6">化学性（自由基）</text>
+    <text x="56" y="310" fill="#1e293b">F*、Cl* 自由基与材料反应生成挥发物</text>
+    <text x="56" y="328" fill="#1e293b">各向同性、选择比高（如 XeF₂ 刻 Si）</text>
+
+    <rect x="325" y="270" width="270" height="72" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="341" y="292" font-weight="700" fill="#5b21b6">物理性（离子溅射）</text>
+    <text x="341" y="310" fill="#1e293b">Ar⁺ 高能离子"砸"掉表面原子</text>
+    <text x="341" y="328" fill="#1e293b">方向性强但选择比差、易损伤</text>
+
+    <rect x="610" y="270" width="250" height="72" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="626" y="292" font-weight="700" fill="#5b21b6">化学+物理协同（主流）</text>
+    <text x="626" y="310" fill="#1e293b">离子轰击破坏表面键 + 自由基反应</text>
+    <text x="626" y="328" fill="#1e293b">再加侧壁钝化聚合物 → 各向异性</text>
+  </g>
+
+  <!-- 关键指标 -->
+  <text x="40" y="368" font-size="14" font-weight="700" fill="#059669">刻蚀 PE 的六个 KPI（背下来，面试直接用）</text>
+  <g font-size="11.5">
+    <rect x="40" y="382" width="130" height="52" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="105" y="404" text-anchor="middle" font-weight="700" fill="#065f46">Etch Rate</text>
+    <text x="105" y="422" text-anchor="middle" fill="#334155">刻蚀速率 Å/s</text>
+
+    <rect x="180" y="382" width="130" height="52" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="245" y="404" text-anchor="middle" font-weight="700" fill="#065f46">Selectivity</text>
+    <text x="245" y="422" text-anchor="middle" fill="#334155">选择比（对胶/下层）</text>
+
+    <rect x="320" y="382" width="130" height="52" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="385" y="404" text-anchor="middle" font-weight="700" fill="#065f46">Uniformity</text>
+    <text x="385" y="422" text-anchor="middle" fill="#334155">片内/片间均匀性</text>
+
+    <rect x="460" y="382" width="130" height="52" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="525" y="404" text-anchor="middle" font-weight="700" fill="#065f46">Profile</text>
+    <text x="525" y="422" text-anchor="middle" fill="#334155">侧壁形貌/角度</text>
+
+    <rect x="600" y="382" width="130" height="52" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="665" y="404" text-anchor="middle" font-weight="700" fill="#065f46">Loading</text>
+    <text x="665" y="422" text-anchor="middle" fill="#334155">图形密度效应</text>
+
+    <rect x="740" y="382" width="120" height="52" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="800" y="404" text-anchor="middle" font-weight="700" fill="#065f46">ARDE</text>
+    <text x="800" y="422" text-anchor="middle" fill="#334155">深宽比依赖刻蚀</text>
+  </g>
+
+  <rect x="40" y="446" width="820" height="28" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="58" y="464" font-size="11.5" fill="#1e40af">终点检测 EPD：用 OES（光谱）看反应产物特征峰消失，或用干涉法；终点判错 = 过刻蚀 / 刻不透，是刻蚀最常见的不良来源。</text>
+</svg>

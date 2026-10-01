@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" width="900" height="470" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="900" height="470" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">薄膜沉积三大门派：台阶覆盖能力是分水岭</text>
+
+  <!-- PVD -->
+  <g>
+    <rect x="40" y="52" width="270" height="216" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="175" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#2563eb">PVD 物理气相沉积</text>
+    <text x="175" y="95" text-anchor="middle" font-size="10.5" fill="#64748b">蒸发 / 溅射 Sputter</text>
+
+    <!-- 靶材到晶圆 -->
+    <rect x="70" y="112" width="200" height="16" fill="#94a3b8"/>
+    <text x="170" y="125" text-anchor="middle" font-size="10" fill="#ffffff">靶材 Target</text>
+    <g stroke="#94a3b8" stroke-width="1.5">
+      <path d="M110 128 L100 160"/><path d="M150 128 L148 160"/><path d="M190 128 L200 160"/><path d="M230 128 L248 160"/>
+    </g>
+    <path d="M70 164 L270 164 L270 180 L70 180 Z" fill="#cbd5e1"/>
+    <path d="M100 164 L100 138 L118 138 L118 164" fill="#cbd5e1"/>
+    <path d="M180 164 L180 138 L198 138 L198 164" fill="#cbd5e1"/>
+    <text x="170" y="196" text-anchor="middle" font-size="10.5" fill="#334155">直线飞行，几乎不绕弯</text>
+
+    <text x="60" y="218" font-size="11.5" fill="#334155">原理：Ar⁺ 轰击靶材 → 原子飞出 → 落在晶圆</text>
+    <text x="60" y="236" font-size="11.5" fill="#dc2626">台阶覆盖差：侧壁薄、开口易夹断</text>
+    <text x="60" y="254" font-size="11.5" fill="#334155">用：金属布线 Al/Cu/TiN 阻挡层、硬掩模</text>
+  </g>
+
+  <!-- CVD -->
+  <g>
+    <rect x="325" y="52" width="270" height="216" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="460" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#059669">CVD 化学气相沉积</text>
+    <text x="460" y="95" text-anchor="middle" font-size="10.5" fill="#64748b">APCVD/LPCVD/PECVD</text>
+
+    <g fill="#a7f3d0">
+      <circle cx="360" cy="115" r="4"/><circle cx="400" cy="132" r="4"/><circle cx="440" cy="112" r="4"/>
+      <circle cx="480" cy="136" r="4"/><circle cx="520" cy="118" r="4"/><circle cx="560" cy="130" r="4"/>
+    </g>
+    <text x="460" y="152" text-anchor="middle" font-size="10.5" fill="#065f46">前驱体气体在表面反应成膜</text>
+    <path d="M355 164 L565 164 L565 180 L355 180 Z" fill="#cbd5e1"/>
+    <path d="M385 164 L385 138 L403 138 L403 164" fill="#a7f3d0"/>
+    <path d="M465 164 L465 138 L483 138 L483 164" fill="#a7f3d0"/>
+    <path d="M385 164 L385 150 L403 150" stroke="#059669" stroke-width="2" fill="none"/>
+    <text x="460" y="196" text-anchor="middle" font-size="10.5" fill="#334155">有一定绕行能力，侧壁能覆盖</text>
+
+    <text x="345" y="218" font-size="11.5" fill="#334155">原理：气态前驱体在晶圆表面化学反应成固态膜</text>
+    <text x="345" y="236" font-size="11.5" fill="#d97706">PECVD 加等离子体 → 低温（&lt;400℃）也能做</text>
+    <text x="345" y="254" font-size="11.5" fill="#334155">用：SiO₂/SiN 介质层、钝化层</text>
+  </g>
+
+  <!-- ALD -->
+  <g>
+    <rect x="610" y="52" width="250" height="216" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="735" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#7c3aed">ALD 原子层沉积</text>
+    <text x="735" y="95" text-anchor="middle" font-size="10.5" fill="#64748b">自限制表面反应，一层一层长</text>
+
+    <path d="M640 164 L860 164 L860 180 L640 180 Z" fill="#cbd5e1"/>
+    <path d="M670 164 L670 136 L690 136 L690 164" fill="#ddd6fe"/>
+    <path d="M750 164 L750 136 L770 136 L770 164" fill="#ddd6fe"/>
+    <path d="M670 164 L670 146 L690 146" stroke="#7c3aed" stroke-width="4" fill="none"/>
+    <path d="M690 146 L690 164" stroke="#7c3aed" stroke-width="4" fill="none"/>
+    <path d="M750 164 L750 146 L770 146" stroke="#7c3aed" stroke-width="4" fill="none"/>
+    <path d="M770 146 L770 164" stroke="#7c3aed" stroke-width="4" fill="none"/>
+    <text x="735" y="196" text-anchor="middle" font-size="10.5" fill="#334155">厚度完全均匀，100% 保形</text>
+
+    <text x="625" y="218" font-size="11.5" fill="#334155">原理：A 前驱体 → 吹扫 → B 前驱体 → 吹扫，循环</text>
+    <text x="625" y="236" font-size="11.5" fill="#7c3aed">每循环只长 ~1 Å，厚度 = 循环数 × GPC</text>
+    <text x="625" y="254" font-size="11.5" fill="#334155">用：High-k 栅介质、GAA 纳米片间隙、深孔</text>
+  </g>
+
+  <!-- 对比表 -->
+  <text x="40" y="296" font-size="14" font-weight="700" fill="#0f172a">横向对比（背下来）</text>
+  <g font-size="11.5">
+    <rect x="40" y="310" width="820" height="26" fill="#e2e8f0"/>
+    <text x="60" y="328" font-weight="700" fill="#334155">类型</text>
+    <text x="240" y="328" font-weight="700" fill="#334155">台阶覆盖</text>
+    <text x="420" y="328" font-weight="700" fill="#334155">沉积速率</text>
+    <text x="580" y="328" font-weight="700" fill="#334155">温度</text>
+    <text x="730" y="328" font-weight="700" fill="#334155">典型用途</text>
+
+    <rect x="40" y="336" width="820" height="26" fill="#ffffff"/>
+    <text x="60" y="354" fill="#1e40af">PVD</text>
+    <text x="240" y="354" fill="#dc2626">差（各向异性）</text>
+    <text x="420" y="354" fill="#334155">快</text>
+    <text x="580" y="354" fill="#334155">低</text>
+    <text x="730" y="354" fill="#334155">金属层、阻挡层</text>
+
+    <rect x="40" y="362" width="820" height="26" fill="#f8fafc"/>
+    <text x="60" y="380" fill="#059669">CVD / PECVD</text>
+    <text x="240" y="380" fill="#d97706">中等</text>
+    <text x="420" y="380" fill="#334155">中~快</text>
+    <text x="580" y="380" fill="#334155">中~高</text>
+    <text x="730" y="380" fill="#334155">SiO₂ / SiN 介质</text>
+
+    <rect x="40" y="388" width="820" height="26" fill="#ffffff"/>
+    <text x="60" y="406" fill="#7c3aed">ALD</text>
+    <text x="240" y="406" fill="#059669">极好（保形）</text>
+    <text x="420" y="406" fill="#dc2626">很慢</text>
+    <text x="580" y="406" fill="#334155">低~中</text>
+    <text x="730" y="406" fill="#334155">High-k、高深宽比结构</text>
+
+    <rect x="40" y="414" width="820" height="26" fill="#f8fafc"/>
+    <text x="60" y="432" fill="#0891b2">Epi 外延</text>
+    <text x="240" y="432" fill="#334155">单晶延续衬底</text>
+    <text x="420" y="432" fill="#334155">慢</text>
+    <text x="580" y="432" fill="#dc2626">高（&gt;600℃）</text>
+    <text x="730" y="432" fill="#334155">源漏 SiGe、沟道</text>
+  </g>
+
+  <rect x="40" y="448" width="820" height="18" rx="5" fill="#fff7ed"/>
+  <text x="58" y="461" font-size="11" fill="#9a3412">成膜质量三问：厚度准不准？均匀性好不好？有没有颗粒/空洞/应力？——这三个问题贯穿所有薄膜 PE 的日常。</text>
+</svg>

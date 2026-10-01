@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">光刻 Litho：把电路图"投影"到晶圆上（Fab 最贵、最关键的模块）</text>
+
+  <!-- 八步流程 -->
+  <g font-size="11">
+    <!-- Step 1 -->
+    <g>
+      <rect x="30" y="52" width="96" height="112" rx="8" fill="#ffffff" stroke="#94a3b8"/>
+      <rect x="42" y="66" width="72" height="10" fill="#cbd5e1"/>
+      <rect x="42" y="76" width="72" height="34" fill="#e2e8f0"/>
+      <rect x="42" y="110" width="72" height="14" fill="#fecaca" stroke="#dc2626"/>
+      <text x="78" y="140" text-anchor="middle" font-weight="700" fill="#334155">① 涂底 HMDS</text>
+      <text x="78" y="154" text-anchor="middle" fill="#64748b">增黏</text>
+    </g>
+    <!-- Step 2 -->
+    <g>
+      <rect x="138" y="52" width="96" height="112" rx="8" fill="#ffffff" stroke="#94a3b8"/>
+      <rect x="150" y="66" width="72" height="34" fill="#e2e8f0"/>
+      <rect x="150" y="92" width="72" height="32" fill="#fbbf24"/>
+      <text x="186" y="140" text-anchor="middle" font-weight="700" fill="#334155">② 涂胶 Coat</text>
+      <text x="186" y="154" text-anchor="middle" fill="#64748b">旋涂，转速定膜厚</text>
+    </g>
+    <!-- Step 3 -->
+    <g>
+      <rect x="246" y="52" width="96" height="112" rx="8" fill="#ffffff" stroke="#94a3b8"/>
+      <rect x="258" y="66" width="72" height="34" fill="#e2e8f0"/>
+      <rect x="258" y="92" width="72" height="32" fill="#fbbf24"/>
+      <text x="294" y="140" text-anchor="middle" font-weight="700" fill="#334155">③ 软烘 PAB</text>
+      <text x="294" y="154" text-anchor="middle" fill="#64748b">去溶剂</text>
+    </g>
+    <!-- Step 4 曝光 -->
+    <g>
+      <rect x="354" y="52" width="150" height="112" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+      <rect x="366" y="66" width="126" height="34" fill="#e2e8f0"/>
+      <rect x="366" y="92" width="126" height="32" fill="#fbbf24"/>
+      <path d="M400 52 L400 62" stroke="#2563eb" stroke-width="2"/>
+      <path d="M430 52 L430 62" stroke="#2563eb" stroke-width="2"/>
+      <path d="M460 52 L460 62" stroke="#2563eb" stroke-width="2"/>
+      <path d="M490 52 L490 62" stroke="#2563eb" stroke-width="2"/>
+      <text x="429" y="140" text-anchor="middle" font-weight="700" fill="#c2410c">④ 曝光 Exposure</text>
+      <text x="429" y="154" text-anchor="middle" fill="#64748b">光罩 Mask / Reticle 投影</text>
+    </g>
+    <!-- Step 5 -->
+    <g>
+      <rect x="516" y="52" width="96" height="112" rx="8" fill="#ffffff" stroke="#94a3b8"/>
+      <rect x="528" y="66" width="72" height="34" fill="#e2e8f0"/>
+      <rect x="528" y="92" width="72" height="32" fill="#fbbf24"/>
+      <text x="564" y="140" text-anchor="middle" font-weight="700" fill="#334155">⑤ 后烘 PEB</text>
+      <text x="564" y="154" text-anchor="middle" fill="#64748b">化学放大反应</text>
+    </g>
+    <!-- Step 6 -->
+    <g>
+      <rect x="624" y="52" width="110" height="112" rx="8" fill="#ffffff" stroke="#94a3b8"/>
+      <rect x="636" y="66" width="86" height="34" fill="#e2e8f0"/>
+      <rect x="636" y="100" width="24" height="24" fill="#fbbf24"/>
+      <rect x="676" y="100" width="24" height="24" fill="#fbbf24"/>
+      <text x="679" y="140" text-anchor="middle" font-weight="700" fill="#334155">⑥ 显影 Develop</text>
+      <text x="679" y="154" text-anchor="middle" fill="#64748b">TMAH 溶掉曝光区</text>
+    </g>
+    <!-- Step 7 -->
+    <g>
+      <rect x="746" y="52" width="114" height="112" rx="8" fill="#ffffff" stroke="#94a3b8"/>
+      <rect x="758" y="66" width="90" height="34" fill="#e2e8f0"/>
+      <rect x="758" y="100" width="24" height="24" fill="#fbbf24"/>
+      <rect x="798" y="100" width="24" height="24" fill="#fbbf24"/>
+      <path d="M770 92 L770 60" stroke="#dc2626" stroke-width="2" marker-end="url(#l1)"/>
+      <text x="803" y="140" text-anchor="middle" font-weight="700" fill="#334155">⑦ 检视 ADI</text>
+      <text x="803" y="154" text-anchor="middle" fill="#64748b">显影后检查</text>
+      <defs><marker id="l1" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#dc2626"/></marker></defs>
+    </g>
+  </g>
+
+  <!-- 步进流程箭头 -->
+  <g stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#l2)">
+    <path d="M126 108 L136 108"/><path d="M234 108 L244 108"/><path d="M342 108 L352 108"/>
+    <path d="M504 108 L514 108"/><path d="M612 108 L622 108"/><path d="M734 108 L744 108"/>
+  </g>
+  <defs><marker id="l2" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#94a3b8"/></marker></defs>
+
+  <text x="450" y="188" text-anchor="middle" font-size="12" fill="#64748b">⑧ 之后交给刻蚀 / 注入，最后去胶 Ashing → 回到循环</text>
+
+  <!-- 分辨率判据 -->
+  <text x="40" y="224" font-size="14" font-weight="700" fill="#2563eb">瑞利判据：为什么要把波长越做越短</text>
+  <rect x="40" y="238" width="430" height="112" rx="10" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="255" y="278" text-anchor="middle" font-size="20" font-weight="700" fill="#1e40af">CD = k₁ · λ / NA</text>
+  <g font-size="11.5" fill="#1e293b">
+    <text x="58" y="304">CD：可分辨的最小线宽</text>
+    <text x="230" y="304">λ：曝光波长</text>
+    <text x="360" y="304">NA：镜头数值孔径</text>
+    <text x="58" y="324">k₁：工艺因子（0.6 → 0.25，靠 OPC/RET/相移掩模压低）</text>
+  </g>
+  <text x="58" y="344" font-size="11.5" fill="#64748b">λ: g-line 436nm → i-line 365nm → KrF 248nm → ArF 193nm → ArF 浸没式 193i → EUV 13.5nm</text>
+
+  <rect x="490" y="238" width="370" height="112" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="508" y="262" font-size="12.5" font-weight="700" fill="#334155">工艺窗口的两个维度</text>
+  <text x="508" y="284" font-size="11.5" fill="#1e293b">DOF 焦深：焦点能前后偏多少还清晰</text>
+  <text x="508" y="302" font-size="11.5" fill="#1e293b">EL 曝光宽容度：能量能差多少还合格</text>
+  <text x="508" y="322" font-size="11.5" fill="#64748b">Bossung 曲线 / FEM  wafer 就是画这个的</text>
+  <text x="508" y="340" font-size="11.5" fill="#64748b">DOF 与分辨率天然矛盾 —— PE 的日常取舍</text>
+
+  <!-- 关键指标 -->
+  <text x="40" y="376" font-size="14" font-weight="700" fill="#059669">光刻 PE 的四个核心 KPI</text>
+  <g font-size="11.5">
+    <rect x="40" y="390" width="200" height="56" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="56" y="412" font-weight="700" fill="#065f46">CD / CDU</text>
+    <text x="56" y="430" fill="#1e293b">线宽及其均匀性</text>
+
+    <rect x="252" y="390" width="200" height="56" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="268" y="412" font-weight="700" fill="#065f46">Overlay 套刻</text>
+    <text x="268" y="430" fill="#1e293b">本层与上一层对准误差</text>
+
+    <rect x="464" y="390" width="196" height="56" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="480" y="412" font-weight="700" fill="#065f46">LER / LWR</text>
+    <text x="480" y="430" fill="#1e293b">线边/线宽粗糙度</text>
+
+    <rect x="672" y="390" width="188" height="56" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="688" y="412" font-weight="700" fill="#065f46">Defect 缺陷</text>
+    <text x="688" y="430" fill="#1e293b">桥连 / 断线 / 残胶</text>
+  </g>
+
+  <rect x="40" y="460" width="820" height="30" rx="8" fill="#fff7ed" stroke="#fb923c"/>
+  <text x="58" y="480" font-size="11.5" fill="#9a3412">设备视角：光刻机（Scanner）是 Fab 最贵的机台，EUV 一台超 1.5 亿美元；EE 主要做 Stage 精度、镜头环境（温湿度/振动）、光源功率与污染控制。</text>
+</svg>

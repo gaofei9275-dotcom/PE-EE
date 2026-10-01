@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="900" height="440" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">量测 Metrology：看不见就改不动（PE 的眼睛）</text>
+
+  <text x="40" y="64" font-size="14" font-weight="700" fill="#2563eb">按"量什么"分类的六大量测</text>
+
+  <g font-size="11.5">
+    <rect x="40" y="78" width="270" height="88" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="56" y="100" font-weight="700" fill="#1e40af">膜厚 Thickness</text>
+    <text x="56" y="120" fill="#1e293b">椭偏仪 Ellipsometry（透明膜）</text>
+    <text x="56" y="138" fill="#1e293b">XRF（金属膜）、干涉/反射光谱</text>
+    <text x="56" y="156" fill="#64748b">出：厚度、n/k 光学常数、均匀性</text>
+
+    <rect x="325" y="78" width="270" height="88" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="341" y="100" font-weight="700" fill="#1e40af">关键尺寸 CD</text>
+    <text x="341" y="120" fill="#1e293b">CD-SEM（扫描电镜，最常用）</text>
+    <text x="341" y="138" fill="#1e293b">OCD/散射测量（量产在线主力）</text>
+    <text x="341" y="156" fill="#64748b">出：线宽、侧壁角、LER/LWR</text>
+
+    <rect x="610" y="78" width="250" height="88" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="626" y="100" font-weight="700" fill="#1e40af">套刻 Overlay</text>
+    <text x="626" y="120" fill="#1e293b">光学套刻量测（对位标记）</text>
+    <text x="626" y="138" fill="#1e293b">出：X/Y 偏移、旋转、缩放</text>
+    <text x="626" y="156" fill="#64748b">Overlay 差 = 上下层接不上</text>
+
+    <rect x="40" y="178" width="270" height="88" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="56" y="200" font-weight="700" fill="#065f46">缺陷 Defect</text>
+    <text x="56" y="220" fill="#1e293b">明场/暗场光学检测（KLA 主力）</text>
+    <text x="56" y="238" fill="#1e293b">电子束检侧 EBI、宏观检侧</text>
+    <text x="56" y="256" fill="#64748b">出：缺陷数、坐标、分类</text>
+
+    <rect x="325" y="178" width="270" height="88" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="341" y="200" font-weight="700" fill="#065f46">形貌 Profile</text>
+    <text x="341" y="220" fill="#1e293b">SEM 截面、TEM（原子级）</text>
+    <text x="341" y="238" fill="#1e293b">AFM（表面粗糙度、台阶）</text>
+    <text x="341" y="256" fill="#64748b">出：深度、角度、界面、粗糙度</text>
+
+    <rect x="610" y="178" width="250" height="88" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="626" y="200" font-weight="700" fill="#065f46">电性 Electrical</text>
+    <text x="626" y="220" fill="#1e293b">四探针测 Rs、C-V、I-V</text>
+    <text x="626" y="238" fill="#1e293b">WAT / E-test（划片道测试结构）</text>
+    <text x="626" y="256" fill="#64748b">出：Vt、Rs、击穿、漏电</text>
+  </g>
+
+  <!-- 成分分析 -->
+  <text x="40" y="292" font-size="14" font-weight="700" fill="#7c3aed">失效分析常备的成分/结构手段</text>
+  <g font-size="11.5">
+    <rect x="40" y="306" width="200" height="70" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="56" y="328" font-weight="700" fill="#5b21b6">EDX / EDS</text>
+    <text x="56" y="348" fill="#1e293b">配在 SEM/TEM 上，看元素成分</text>
+    <text x="56" y="366" fill="#64748b">查"这个颗粒是什么"</text>
+
+    <rect x="252" y="306" width="200" height="70" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="268" y="328" font-weight="700" fill="#5b21b6">SIMS</text>
+    <text x="268" y="348" fill="#1e293b">二次离子质谱，深度剖析掺杂</text>
+    <text x="268" y="366" fill="#64748b">灵敏度最高的掺杂轮廓手段</text>
+
+    <rect x="464" y="306" width="200" height="70" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="480" y="328" font-weight="700" fill="#5b21b6">XPS / AES</text>
+    <text x="480" y="348" fill="#1e293b">表面化学态 / 极薄层成分</text>
+    <text x="480" y="366" fill="#64748b">界面、氧化态分析</text>
+
+    <rect x="676" y="306" width="184" height="70" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="692" y="328" font-weight="700" fill="#5b21b6">FIB 聚焦离子束</text>
+    <text x="692" y="348" fill="#1e293b">定点切片做 TEM 样品</text>
+    <text x="692" y="366" fill="#64748b">定点剖面观察</text>
+  </g>
+
+  <rect x="40" y="392" width="820" height="36" rx="8" fill="#fff7ed" stroke="#fb923c"/>
+  <text x="58" y="412" font-size="11.5" fill="#9a3412">量测三性：Accuracy 准确度（准不准）、Precision 精密度（重不重复）、Resolution 分辨率。量测误差（MSA / Gauge R&amp;R）必须远小于规格公差，否则你在"调噪声"。</text>
+  <text x="58" y="426" font-size="11.5" fill="#9a3412">在线 vs 离线：Inline（机台内/线边，快、抽样多）与 Offline（实验室，慢但精度高）；先进节点大量依赖 OCD 与机器学习分类（ADC）。</text>
+</svg>

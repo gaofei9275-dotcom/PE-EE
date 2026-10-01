@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="900" height="520" fill="#ffffff"/>
+  <text x="450" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">半导体产业链：三类玩家 + 三类工厂</text>
+
+  <!-- 产业链主干 -->
+  <rect x="40" y="70" width="185" height="62" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="132" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#1e40af">上游 · 支撑</text>
+  <text x="132" y="120" text-anchor="middle" font-size="12" fill="#334155">设备 / 材料 / EDA</text>
+
+  <rect x="265" y="70" width="185" height="62" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <text x="357" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#065f46">中游 · 制造 ← 你投的岗</text>
+  <text x="357" y="120" text-anchor="middle" font-size="12" fill="#334155">晶圆制造 Fab</text>
+
+  <rect x="490" y="70" width="185" height="62" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="582" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#92400e">下游 · 封测</text>
+  <text x="582" y="120" text-anchor="middle" font-size="12" fill="#334155">封装 + 测试</text>
+
+  <rect x="715" y="70" width="145" height="62" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="787" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#334155">终端</text>
+  <text x="787" y="120" text-anchor="middle" font-size="12" fill="#334155">手机 / 车 / AI</text>
+
+  <path d="M225 101 L262 101" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#ar1)"/>
+  <path d="M450 101 L487 101" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#ar1)"/>
+  <path d="M675 101 L712 101" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#ar1)"/>
+
+  <defs>
+    <marker id="ar1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/>
+    </marker>
+    <marker id="ar2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <!-- 商业模式 -->
+  <text x="40" y="175" font-size="14" font-weight="700" fill="#0f172a">三种商业模式（面试必问：我们公司属于哪一类？）</text>
+
+  <rect x="40" y="190" width="265" height="112" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="56" y="214" font-size="14" font-weight="700" fill="#2563eb">IDM 垂直整合</text>
+  <text x="56" y="236" font-size="12" fill="#334155">设计 → 制造 → 封测 全自己干</text>
+  <text x="56" y="256" font-size="12" fill="#334155">Intel、三星、SK海力士、</text>
+  <text x="56" y="276" font-size="12" fill="#334155">长江存储、长鑫存储、华润微</text>
+  <text x="56" y="294" font-size="12" fill="#64748b">特点：链条长、岗位多、稳定</text>
+
+  <rect x="320" y="190" width="265" height="112" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="336" y="214" font-size="14" font-weight="700" fill="#059669">Foundry 晶圆代工</text>
+  <text x="336" y="236" font-size="12" fill="#334155">只做制造，不设计自己的芯片</text>
+  <text x="336" y="256" font-size="12" fill="#334155">台积电、中芯国际、华虹、</text>
+  <text x="336" y="276" font-size="12" fill="#334155">晶合集成、粤芯</text>
+  <text x="336" y="294" font-size="12" fill="#64748b">特点：EE/PE 岗位量最大</text>
+
+  <rect x="600" y="190" width="260" height="112" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="616" y="214" font-size="14" font-weight="700" fill="#d97706">OSAT 封装测试</text>
+  <text x="616" y="236" font-size="12" fill="#334155">只做封装与成品测试</text>
+  <text x="616" y="256" font-size="12" fill="#334155">日月光、长电科技、通富微电、</text>
+  <text x="616" y="276" font-size="12" fill="#334155">华天科技、甬矽电子</text>
+  <text x="616" y="294" font-size="12" fill="#64748b">特点：节奏快、偏机械与自动化</text>
+
+  <!-- 设备/材料厂商 -->
+  <text x="40" y="337" font-size="14" font-weight="700" fill="#0f172a">另一类去处：设备与材料原厂（Fabless Equipment / Material Supplier）</text>
+  <rect x="40" y="350" width="820" height="66" rx="10" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="58" y="374" font-size="12.5" fill="#1e40af">设备五巨头：ASML（光刻）· Applied Materials 应用材料（薄膜/注入/CMP）· Lam Research 泛林（刻蚀/沉积）· TEL 东京电子（涂胶显影/刻蚀）· KLA 科磊（量测检测）</text>
+  <text x="58" y="396" font-size="12.5" fill="#1e40af">国产阵营：北方华创、中微公司、拓荆科技、盛美上海、华海清科（CMP）、屹唐半导体、上海微电子；材料：沪硅产业、安集科技、鼎龙股份、华特气体</text>
+  <text x="58" y="412" font-size="12" fill="#64748b">在这类公司做 EE/PE 往往叫 FSE（现场服务工程师）/ CSE（客户工程师），长期驻厂，出差多但技术视野广</text>
+
+  <!-- 提示 -->
+  <rect x="40" y="432" width="820" height="62" rx="10" fill="#fff7ed" stroke="#fb923c"/>
+  <text x="58" y="456" font-size="13" font-weight="700" fill="#9a3412">秋招定位提示</text>
+  <text x="58" y="478" font-size="12.5" fill="#7c2d12">投 Foundry / IDM 的 Fab：EE 与 PE 是量产主力岗，招聘人数最多，成长路径清晰（EE→资深EE→设备主管；PE→PIE→模块负责人）。</text>
+  <text x="58" y="488" font-size="12.5" fill="#7c2d12">投原厂：更看重动手能力与英语，适合喜欢出差、想深入理解单机台底层原理的人。</text>
+</svg>

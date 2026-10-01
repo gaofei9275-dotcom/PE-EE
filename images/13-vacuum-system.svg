@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">真空系统：EE 的半条命（几乎所有工艺腔体都要抽真空）</text>
+
+  <!-- 真空度阶梯 -->
+  <text x="40" y="64" font-size="14" font-weight="700" fill="#2563eb">真空度区间与对应的泵</text>
+  <rect x="40" y="78" width="820" height="120" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+
+  <!-- 刻度条 -->
+  <rect x="60" y="104" width="700" height="18" fill="#e2e8f0"/>
+  <g font-size="10" fill="#334155">
+    <text x="60" y="98">大气 10⁵ Pa</text>
+    <text x="280" y="98">粗真空</text>
+    <text x="450" y="98">中真空</text>
+    <text x="640" y="98">高真空</text>
+    <text x="740" y="98" fill="#1e40af">超高真空</text>
+  </g>
+  <g font-size="9.5" fill="#64748b">
+    <text x="60" y="136">10⁵</text>
+    <text x="200" y="136">10²</text>
+    <text x="330" y="136">10⁻¹</text>
+    <text x="470" y="136">10⁻⁴</text>
+    <text x="600" y="136">10⁻⁷</text>
+    <text x="730" y="136">10⁻¹⁰ Pa</text>
+  </g>
+
+  <!-- 泵区间条 -->
+  <rect x="150" y="150" width="180" height="22" rx="5" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="240" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#991b1b">干泵 / 旋片泵（粗抽）</text>
+  <rect x="330" y="150" width="200" height="22" rx="5" fill="#fef3c7" stroke="#d97706"/>
+  <text x="430" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">罗茨泵 / 分子泵（中高真空）</text>
+  <rect x="530" y="150" width="180" height="22" rx="5" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="620" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#1e40af">低温泵 / 离子泵</text>
+  <rect x="710" y="150" width="130" height="22" rx="5" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="775" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#5b21b6">钛升华 / NEG</text>
+
+  <text x="60" y="192" font-size="11.5" fill="#64748b">工艺腔体典型工作区间：CVD 数 Torr ~ 数百 Torr；PVD 10⁻³~10⁻⁶ Torr；刻蚀/注入 10⁻³~10⁻⁶ Torr；EUV 需 10⁻⁷ 以上</text>
+
+  <!-- 泵组串联 -->
+  <text x="40" y="228" font-size="14" font-weight="700" fill="#059669">典型泵组：串着抽，各司其职</text>
+  <rect x="40" y="242" width="820" height="92" rx="10" fill="#ecfdf5" stroke="#6ee7b7"/>
+
+  <rect x="60" y="262" width="130" height="52" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="125" y="284" text-anchor="middle" font-size="12" font-weight="700" fill="#1e40af">Process Chamber</text>
+  <text x="125" y="302" text-anchor="middle" font-size="10.5" fill="#334155">工艺腔</text>
+
+  <rect x="215" y="262" width="110" height="52" rx="8" fill="#ffffff" stroke="#94a3b8"/>
+  <text x="270" y="284" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">Throttle Valve</text>
+  <text x="270" y="302" text-anchor="middle" font-size="10.5" fill="#334155">节流阀调压力</text>
+
+  <rect x="350" y="262" width="120" height="52" rx="8" fill="#fef3c7" stroke="#d97706"/>
+  <text x="410" y="284" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">Turbo 分子泵</text>
+  <text x="410" y="302" text-anchor="middle" font-size="10.5" fill="#334155">高速叶片 ~50k rpm</text>
+
+  <rect x="495" y="262" width="120" height="52" rx="8" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="555" y="284" text-anchor="middle" font-size="12" font-weight="700" fill="#991b1b">Dry Pump 干泵</text>
+  <text x="555" y="302" text-anchor="middle" font-size="10.5" fill="#334155">前级泵，排大气</text>
+
+  <rect x="640" y="262" width="200" height="52" rx="8" fill="#f1f5f9" stroke="#64748b"/>
+  <text x="740" y="284" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">Scrubber / Abatement</text>
+  <text x="740" y="302" text-anchor="middle" font-size="10.5" fill="#334155">尾气处理（环保+安全）</text>
+
+  <g stroke="#059669" stroke-width="2" fill="none" marker-end="url(#v1)">
+    <path d="M190 288 L213 288"/><path d="M325 288 L348 288"/><path d="M470 288 L493 288"/><path d="M615 288 L638 288"/>
+  </g>
+  <defs><marker id="v1" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#059669"/></marker></defs>
+  <text x="60" y="328" font-size="11.5" fill="#64748b">分子泵不能直接排大气，必须配前级泵；干泵停机前要 N₂ 吹扫（purge），否则工艺气体结晶卡泵</text>
+
+  <!-- 真空计 -->
+  <text x="40" y="358" font-size="14" font-weight="700" fill="#7c3aed">三种真空计（量程不同，别用错）</text>
+  <g font-size="11.5">
+    <rect x="40" y="372" width="265" height="58" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="56" y="394" font-weight="700" fill="#5b21b6">Pirani / 皮拉尼</text>
+    <text x="56" y="412" fill="#1e293b">靠气体导热测压，10⁻¹~10³ Pa</text>
+    <text x="56" y="426" fill="#64748b">缺点：受气体种类影响大</text>
+
+    <rect x="317" y="372" width="265" height="58" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="333" y="394" font-weight="700" fill="#5b21b6">Capacitance Manometer</text>
+    <text x="333" y="412" fill="#1e293b">薄膜形变测压，与气体种类无关</text>
+    <text x="333" y="426" fill="#64748b">工艺腔压力控制的主力传感器</text>
+
+    <rect x="594" y="372" width="266" height="58" rx="8" fill="#faf5ff" stroke="#c4b5fd"/>
+    <text x="610" y="394" font-weight="700" fill="#5b21b6">Ion Gauge / 离子规</text>
+    <text x="610" y="412" fill="#1e293b">电离残余气体测电流，10⁻¹~10⁻⁷ Pa</text>
+    <text x="610" y="426" fill="#64748b">高真空段才开，大气下开会烧坏</text>
+  </g>
+
+  <!-- Leak check -->
+  <rect x="40" y="446" width="820" height="44" rx="10" fill="#fff7ed" stroke="#fb923c"/>
+  <text x="58" y="468" font-size="12" font-weight="700" fill="#9a3412">抽不到底压怎么排查（超高频故障题）</text>
+  <text x="58" y="484" font-size="11.5" fill="#7c2d12">① 关门做 Leak-up Rate（升压速率）测试；② He 检漏仪喷可疑接头/O-ring；③ 查泵本身（油位、叶片磨损、排气过滤器堵）；④ 查阀门内漏；⑤ 查腔内是否有未干燥的水汽/残留</text>
+</svg>

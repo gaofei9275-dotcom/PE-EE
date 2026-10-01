@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" width="900" height="470" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="900" height="470" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">设备/工艺异常排查：从"报警了"到"根因确认"</text>
+
+  <!-- 主线流程 -->
+  <g font-size="11.5">
+    <rect x="40" y="56" width="150" height="60" rx="8" fill="#fee2e2" stroke="#dc2626"/>
+    <text x="115" y="80" text-anchor="middle" font-weight="700" fill="#991b1b">① 现象与报警</text>
+    <text x="115" y="98" text-anchor="middle" fill="#334155">什么机台、什么 Alarm</text>
+    <text x="115" y="112" text-anchor="middle" fill="#64748b">几片受影响</text>
+
+    <rect x="200" y="56" width="150" height="60" rx="8" fill="#fef3c7" stroke="#d97706"/>
+    <text x="275" y="80" text-anchor="middle" font-weight="700" fill="#92400e">② 遏制 Containment</text>
+    <text x="275" y="98" text-anchor="middle" fill="#334155">先 Hold 货、停机台</text>
+    <text x="275" y="112" text-anchor="middle" fill="#64748b">防止不良继续流出</text>
+
+    <rect x="360" y="56" width="150" height="60" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+    <text x="435" y="80" text-anchor="middle" font-weight="700" fill="#1e40af">③ 数据与线索</text>
+    <text x="435" y="98" text-anchor="middle" fill="#334155">Log / Trend / FDC</text>
+    <text x="435" y="112" text-anchor="middle" fill="#64748b">量测结果 / 时间点</text>
+
+    <rect x="520" y="56" width="150" height="60" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
+    <text x="595" y="80" text-anchor="middle" font-weight="700" fill="#5b21b6">④ 假设与验证</text>
+    <text x="595" y="98" text-anchor="middle" fill="#334155">换机台 / 换片 / 换零件</text>
+    <text x="595" y="112" text-anchor="middle" fill="#64748b">逐项排除</text>
+
+    <rect x="680" y="56" width="180" height="60" rx="8" fill="#d1fae5" stroke="#059669"/>
+    <text x="770" y="80" text-anchor="middle" font-weight="700" fill="#065f46">⑤ 根因 + 对策</text>
+    <text x="770" y="98" text-anchor="middle" fill="#334155">5Why 挖到根因</text>
+    <text x="770" y="112" text-anchor="middle" fill="#64748b">改参数/换件/改 PM</text>
+  </g>
+  <g stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#t1)">
+    <path d="M190 86 L198 86"/><path d="M350 86 L358 86"/><path d="M510 86 L518 86"/><path d="M670 86 L678 86"/>
+  </g>
+  <defs><marker id="t1" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#94a3b8"/></marker></defs>
+
+  <!-- 回环 -->
+  <g font-size="11.5">
+    <rect x="40" y="140" width="150" height="56" rx="8" fill="#d1fae5" stroke="#059669"/>
+    <text x="115" y="164" text-anchor="middle" font-weight="700" fill="#065f46">⑥ 验证有效</text>
+    <text x="115" y="182" text-anchor="middle" fill="#334155">跑片确认指标回归</text>
+
+    <rect x="200" y="140" width="150" height="56" rx="8" fill="#cffafe" stroke="#0891b2"/>
+    <text x="275" y="164" text-anchor="middle" font-weight="700" fill="#155e75">⑦ 横向展开</text>
+    <text x="275" y="182" text-anchor="middle" fill="#334155">同型机台都查一遍</text>
+
+    <rect x="360" y="140" width="150" height="56" rx="8" fill="#f1f5f9" stroke="#64748b"/>
+    <text x="435" y="164" text-anchor="middle" font-weight="700" fill="#334155">⑧ 标准化</text>
+    <text x="435" y="182" text-anchor="middle" fill="#334155">改 SOP / PM 规范</text>
+
+    <rect x="520" y="140" width="340" height="56" rx="8" fill="#fff7ed" stroke="#fb923c"/>
+    <text x="690" y="164" text-anchor="middle" font-weight="700" fill="#9a3412">⑨ 闭环：8D 报告 / CAR / Lesson Learned</text>
+    <text x="690" y="182" text-anchor="middle" fill="#334155">写明根因、对策、防呆（Poka-Yoke）、水平展开与责任人</text>
+  </g>
+  <g stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#t1)">
+    <path d="M190 168 L198 168"/><path d="M350 168 L358 168"/><path d="M510 168 L518 168"/>
+  </g>
+  <path d="M115 116 L115 138" stroke="#059669" stroke-width="2.5" fill="none" marker-end="url(#t2)"/>
+  <defs><marker id="t2" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#059669"/></marker></defs>
+
+  <!-- 5Why 示例 -->
+  <text x="40" y="228" font-size="14" font-weight="700" fill="#7c3aed">5Why 示例：刻蚀深度偏低（背下来这个套路）</text>
+  <rect x="40" y="242" width="530" height="180" rx="10" fill="#faf5ff" stroke="#c4b5fd"/>
+  <g font-size="11.5">
+    <text x="58" y="266" font-weight="700" fill="#5b21b6">Why1 为什么深度不够？</text><text x="290" y="266" fill="#1e293b">→ 刻蚀速率掉了 15%</text>
+    <text x="58" y="290" font-weight="700" fill="#5b21b6">Why2 为什么速率掉？</text><text x="290" y="290" fill="#1e293b">→ 腔体压力比设定值高</text>
+    <text x="58" y="314" font-weight="700" fill="#5b21b6">Why3 为什么压力高？</text><text x="290" y="314" fill="#1e293b">→ 节流阀开度反馈异常</text>
+    <text x="58" y="338" font-weight="700" fill="#5b21b6">Why4 为什么阀门异常？</text><text x="290" y="338" fill="#1e293b">→ 阀体被反应生成物粘住</text>
+    <text x="58" y="362" font-weight="700" fill="#5b21b6">Why5 为什么会粘住？</text><text x="290" y="362" fill="#1e293b">→ PM 周期过长 + 该气体聚合物多</text>
+    <text x="58" y="392" font-weight="700" fill="#dc2626">根因对策：</text><text x="150" y="392" fill="#1e293b">缩短该腔 PM 周期、增加腔体清洁步骤、把阀体列入耗材清单</text>
+    <text x="58" y="412" font-size="11" fill="#64748b">注意：停在"操作失误/没按 SOP"不算根因，必须追到可工程化的对策</text>
+  </g>
+
+  <!-- 鱼骨图 -->
+  <text x="590" y="228" font-size="14" font-weight="700" fill="#059669">5M1E 鱼骨图：六个维度找原因</text>
+  <rect x="590" y="242" width="270" height="180" rx="10" fill="#ecfdf5" stroke="#6ee7b7"/>
+  <g font-size="11">
+    <text x="606" y="266">Man 人：操作、培训、交接班</text>
+    <text x="606" y="288">Machine 机：机台、Parts、参数</text>
+    <text x="606" y="310">Material 料：晶圆、靶材、化学品</text>
+    <text x="606" y="332">Method 法：Recipe、SOP、顺序</text>
+    <text x="606" y="354">Measurement 测：量测误差、取样</text>
+    <text x="606" y="376">Environment 环：温湿度、洁净度、振动</text>
+    <text x="606" y="404" font-size="11" fill="#64748b">Fab 里最常用的是 Machine / Material /</text>
+    <text x="606" y="420" font-size="11" fill="#64748b">Method 三条，先怀疑这三条效率高。</text>
+  </g>
+
+  <rect x="40" y="434" width="820" height="30" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="58" y="454" font-size="11.5" fill="#1e40af">面试加分点：主动说"我会先区分是机台问题还是工艺问题（换机台跑同一 recipe），再看数据是单点跳变还是渐进漂移（渐变→耗材老化；突变→零件损坏/断电/报警）"。</text>
+</svg>
